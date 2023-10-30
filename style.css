@@ -5,15 +5,27 @@
   font-family: sans-serif;
 }
 
-body {
-  display: flex;
-  align-items: center;
+body { 
+  background-image: url(image.jpg);
+ /* // display: flex; */
+  /* align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  background: linear-gradient(45deg, rgb(0 0 0), rgb(49 122 109));
+  min-height: 100vh; */
+  /* background: linear-gradient(45deg, rgb(0 0 0), rgb(49 122 109)); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.chandan{
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  color: white;
 }
 
 .calculator {
+
   width: 356px;
   margin: 50px auto;
   border: 1px solid #ccc;
@@ -50,4 +62,15 @@ button {
 .equal {
   background-color: #f67c92;
   color: #fff;
+}
+@media screen and (max-width: 700px) {
+  .calculator{
+    margin-right: 1rem;
+   
+  }
+  .chandan{
+    color: rgb(255, 255, 255);
+    margin-bottom: 3rem;
+   text-align: center;
+  }
 }
